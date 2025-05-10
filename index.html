@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT CLUB</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- splash screen -->
+
+    <div class="loading-page" id="splash-screen">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+        <path
+          d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+        />
+      </svg>
+
+      <div class="name-container">
+        <div class="logo-name">IT CLUB</div>
+      </div>
+    </div>
+    <!-- splash screen end -->
+
+    <!-- Main content -->
+    <div id="main-content" class="main-content">
+      <div class="navbar">
+        <ul>
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Activity">Activity</a></li>
+          <li><a href="#Join">Join</a></li>
+          <li><a href="#Profiles">Profiles</a></li>
+        </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="container" id="welcome">
+        <div class="welcome-box">
+          <h1>BONJOUR,</h1>
+          <h2><span id="typed-text-wrapper"></span></h2>
+          <p>
+            Here we will display information regarding IT CLUB, from activities
+            to IT CLUB profiles.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <section>
+        <div class="about-section" id="about">
+          <div class="about-text">
+            <h3>About Us</h3>
+            <h2>What We <span>Do?</span></h2>
+            <p>
+              Here, we bring together students who possess a strong interest and
+              exceptional talent in the field of Information Technology (IT).
+              The IT Club is a place where we foster and nurture these skills,
+              providing opportunities for students to grow, innovate, and excel.
+              Through various workshops, training sessions, and collaborative
+              projects, we aim to enhance the technical abilities and creativity
+              of our members.
+            </p>
+            <button class="about-button">
+              <span class="button-text">Selengkapnya</span>
+            </button>
+          </div>
+          <div class="about-image">
+            <img src="img-about.png" alt="IT Club Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="marketplace-section" id="Activity">
+        <div class="container-one">
+          <div class="bag-header">
+            <h2>The activities <br />we do</h2>
+            <p>
+              At It Club we will learn many programming languages ​​so that you
+              can understand more than 1 programming language.
+            </p>
+          </div>
+
+          <div class="categories-grid">
+            <!-- Category Card 1 -->
+            <div class="category-card" data-aos="fade-up">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="category-info">
+                <h3>Java</h3>
+                <p>Java Basics</p>
+              </div>
+            </div>
+
+            <!-- Category Card 2 -->
+            <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="category-info">
+                <h3>Java Script</h3>
+                <p>Java Script Basics</p>
+              </div>
+            </div>
+
+            <!-- Category Card 3 -->
+            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="category-info">
+                <h3>Python</h3>
+                <p>Python Basic</p>
+              </div>
+            </div>
+
+            <!-- Category Card 4 -->
+            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="category-info">
+                <h3>React Js</h3>
+                <p>React js Basics</p>
+              </div>
+            </div>
+
+            <!-- Category Card 5 -->
+            <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-laravel"></i>
+              </div>
+              <div class="category-info">
+                <h3>Laravel</h3>
+                <p>Laravel Basics</p>
+              </div>
+            </div>
+
+            <!-- Category Card 6 -->
+            <div class="category-card" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="category-info">
+                <h3>My Sql</h3>
+                <p>My Sql Basics</p>
+              </div>
+            </div>
+
+            <!-- More Categories Card -->
+            <div
+              class="category-card more-categories"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="more-content">
+                <h3>And many more</h3>
+                <p>You can Explore In Here</p>
+                <button class="explore-btn">
+                  <a href="www.google.com" class="explore-btn">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <div class="container-form" id="Join">
+        <div class="form-container">
+          <div class="form-header">
+            <h1>Join IT Club</h1>
+            <p>Bergabunglah dengan komunitas tech enthusiast!</p>
+          </div>
+
+          <form id="registrationForm" onsubmit="return validateForm(event)">
+            <div class="input-group">
+              <label for="fullName">Nama Lengkap</label>
+              <input type="text" id="fullName" name="fullName" required />
+              <div class="input-icon">👤</div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <div class="input-icon">📧</div>
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Nomor Telepon</label>
+              <input type="tel" id="phone" name="phone" required />
+              <div class="input-icon">📱</div>
+            </div>
+
+            <div class="input-group">
+              <label for="division">Divisi yang Diminati</label>
+              <select id="division" name="division" required>
+                <option value="">Pilih Bahasa Pemogramman</option>
+                <option value="web">React Js</option>
+                <option value="mobile">Laravel</option>
+                <option value="ui">My SQL</option>
+                <option value="data">Python</option>
+                <option value="cyber">Java</option>
+                <option value="cyber">Java Script</option>
+              </select>
+              <div class="input-icon">💻</div>
+            </div>
+
+            <div class="input-group">
+              <label for="experience">Alasan Kenapa Ingin Masuk</label>
+              <textarea
+                id="experience"
+                name="experience"
+                rows="4"
+                required
+              ></textarea>
+              <div class="input-icon">📝</div>
+            </div>
+
+            <div class="input-group checkbox-group">
+              <input type="checkbox" id="agreement" name="agreement" required />
+              <label for="agreement"
+                >Saya setuju dengan syarat dan ketentuan IT Club</label
+              >
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Daftar Sekarang</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="decoration">
+          <div class="circle"></div>
+          <div class="square"></div>
+          <div class="triangle"></div>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <section class="team-section" id="Profiles">
+        <div class="container-team">
+          <div class="section-header">
+            <h2 class="section-title">PART OF IT CLUB</h2>
+            <p class="section-sub">
+              Meet the talented individuals behind IT Club
+            </p>
+          </div>
+
+          <div class="team-slider">
+            <button class="nav-btn prev-btn" aria-label="Previous slide">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="slider-container">
+              <div class="slider-track">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img src="Ay.jpeg" alt="John Doe" />
+                      <div class="social-links">
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h3 class="member-name">John Doe</h3>
+                      <p class="member-role">Web Development Lead</p>
+                      <p class="member-description">
+                        Full-stack developer with 5+ years of experience in
+                        modern web technologies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img src="rak.jpeg" alt="Jane Smith" />
+                      <div class="social-links">
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h3 class="member-name">Jane Smith</h3>
+                      <p class="member-role">UI/UX Design Head</p>
+                      <p class="member-description">
+                        Creative designer passionate about creating intuitive
+                        user experiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img src="Ap.jpeg" alt="Mike Johnson" />
+                      <div class="social-links">
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h3 class="member-name">Mike Johnson</h3>
+                      <p class="member-role">Mobile Development Lead</p>
+                      <p class="member-description">
+                        Expert in iOS and Android development with a focus on
+                        performance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img
+                        src="tan.jpeg"
+                        alt="Sarah Williams"
+                      />
+                      <div class="social-links">
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h3 class="member-name">Sarah Williams</h3>
+                      <p class="member-role">Data Science Lead</p>
+                      <p class="member-description">
+                        AI/ML specialist with expertise in data analytics and
+                        visualization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-member">
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img src="tan.jpeg" alt="Alex Chen" />
+                      <div class="social-links">
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="#" class="social-link"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h3 class="member-name">Alex Chen</h3>
+                      <p class="member-role">Cyber Security Head</p>
+                      <p class="member-description">
+                        Security expert specializing in penetration testing and
+                        system hardening.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="nav-btn next-btn" aria-label="Next slide">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="slider-dots"></div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <footer class="footer-section">
+        <div class="container-footer">
+            <h2 class="footer-title" id="animated-title">JOIN TO IT CLUB</h2>
+            <p class="footer-subtitle">
+                Be a part of our innovative and dynamic community! Enhance your skills, share knowledge, and grow together.
+            </p>
+            <form id="joinForm" class="footer-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-join">Contact Now</button>
+            </form>
+            <div class="footer-message" id="message"></div>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- home page -->
+
+    <!-- home page end-->
+
+    <!-- ABOUT -->
+
+    <!-- ABOUT end -->
+
+    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
